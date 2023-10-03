@@ -14,41 +14,61 @@
 <body>
     <div class="wrapper">
         <header>
-             <div class="row my-header sticky-top">
-                <div class="col-1">
-                    <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
+            <div class="container-row">
+                <div class="row my-header sticky-top">
+                   <div class="col-1">
+                       <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
+                   </div>
+                   <div class="col-10">
+                       <div class="input-group mb-3 py-3">
+                           <span class="input-group-text my-bg-grey">
+                               <i class="fa-solid fa-magnifying-glass"></i>
+                           </span>
+                           <span class="input-group-text my-bg-grey fs-6 fw-lighter">Prova a cercare: Lezioni di Laravel</span>
+                           <input type="text" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
+                       </div>
+                   </div>
+                   <div class="col-1">
+                       <div class="test fs-4 py-4">
+                           <i class="fa-solid fa-list-ul"></i>
+                           <i class="fa-solid fa-circle-question"></i>
+                           <i class="fa-solid fa-ellipsis-vertical"></i>
+                           <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
+                       </div>
+                   </div>
                 </div>
-                <div class="col-10">
-                    <div class="input-group mb-3 py-3">
-                        <span class="input-group-text my-bg-grey">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                        <span class="input-group-text my-bg-grey fs-6 fw-lighter">Prova a cercare: Lezioni di Laravel</span>
-                        <input type="text" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
-                    </div>
-                </div>
-                <div class="col-1">
-                    <div class="test fs-4 py-4">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <i class="fa-solid fa-circle-question"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                        <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
-                    </div>
-                </div>
-             </div>
+            </div>
         </header>
         <main class="d-flex">
-            <aside>
-                
+            <aside class="text-light">
+                <div class="top-aside py-4">
+                    <div class="option-container py-1">
+                        <i class="fa-solid fa-house d-inline-block"></i>
+                        <p class="icon-text d-inline-block fw-bold px-2">Home</p>
+                    </div>
+                    <div class="option-container py-1">
+                        <i class="fa-solid fa-chart-simple d-inline-block"></i>
+                        <p class="icon-text d-inline-block px-2 fw-bold">Stats</p>
+                    </div>
+                    <div class="option-container py-1">
+                        <i class="fa-solid fa-signal d-inline-block"></i>
+                        <p class="icon-text d-inline-block px-2 fw-bold">Signals</p>
+                    </div>
+                </div>
+                <div class="bottom-aside">
+                    <div class="profile-container py-1 px-1">
+                        <i class="fa-solid fa-gear d-inline-block"></i>
+                        <p class="icon-text d-inline-block px-2 fw-bold"> Admin</p>
+                    </div>
             </aside>
             <div class="main-content">
                 <div class="container-fluid">
-                    <dic class="row">
+                    <div class="row">
                         <div class="col-12 col-lg-8">
                             
                         </div>
                         <div class="col-12 col-lg-4">2</div>
-                    </dic>
+                    </div>
                 </div>
             </div>
         </main>
