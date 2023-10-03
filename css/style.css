@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-bg-search-bar: #e5e5e5;
+    --color-bg-body: #f8f9fa;
+    --color-side-bar: #0f263d;
+    --color-nav-bar: #1b72e8;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+}
+.my-header{
+    height: 70px;
+    z-index: 10;
+}
+main{
+    width: 100%;
+    height: calc(100% - 70px); 
+    display: flex;
+}
+aside{
+    width: 150px; 
+    height: 100%; 
+    /* overflow: hidden; */
+    background-image: url(/img/sidebar-bg.png);
+    background-color: var(--color-side-bar);
+}
+.main-content{
+    width: calc(100% - 150px);
+    overflow-y: auto;
+}
+.my-bg-grey{
+    background-color: #dee2e6;
+}
+.test{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
