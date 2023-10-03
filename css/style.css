@@ -49,3 +49,7 @@ aside{
     justify-content: space-between;
     align-items: center;
 }
+.small-header{
+    background-color: var(--color-nav-bar);
+}
+
