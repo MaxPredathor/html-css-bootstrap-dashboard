@@ -26,7 +26,7 @@ main{
     display: flex;
 }
 aside{
-    width: 150px; 
+    /* width: 150px;  */
     height: 100%; 
     overflow: hidden;
     background-image: url(/img/sidebar-bg.png);
@@ -37,8 +37,9 @@ aside{
     align-items: center;
 }
 .main-content{
-    width: calc(100% - 150px);
+    /* width: calc(100% - 150px); */
     overflow-y: auto;
+    flex-grow: 1;
 }
 .my-bg-grey{
     background-color: #dee2e6;
@@ -65,5 +66,12 @@ aside{
 }
 .chevron{
     padding-left: 10px;
+}
+.table-img{
+    width: 40px;
+    padding: 0px 8px;
+}
+.my-green{
+    background-color: green;
 }
 

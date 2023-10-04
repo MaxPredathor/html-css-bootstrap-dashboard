@@ -14,53 +14,50 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container-fluid">
-                <div class="container-row">
-                    <div class="row my-header sticky-top">
-                       <div class="col-lg-1 col-md-2">
-                           <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
+            <div class="container-fluid">   
+                <div class="row my-header sticky-top">
+                   <div class="col-auto">
+                       <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
+                   </div>
+                   <div class="col">
+                       <div class="input-group mb-3 py-3">
+                           <span class="input-group-text my-bg-grey">
+                               <i class="fa-solid fa-magnifying-glass"></i>
+                           </span>
+                           <input type="text" placeholder="Prova a cercare: Lezioni di Laravel" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
                        </div>
-                       <div class="col-lg-10 col-md-8">
-                           <div class="input-group mb-3 py-3">
-                               <span class="input-group-text my-bg-grey">
-                                   <i class="fa-solid fa-magnifying-glass"></i>
-                               </span>
-                               <span class="input-group-text my-bg-grey fs-6 fw-lighter">Prova a cercare: Lezioni di Laravel</span>
-                               <input type="text" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
-                           </div>
+                   </div>
+                   <div class="col-auto">
+                       <div class="test fs-5 py-4">
+                           <i class="fa-solid fa-list-ul px-2"></i>
+                           <i class="fa-solid fa-circle-question px-2"></i>
+                           <i class="fa-solid fa-ellipsis-vertical px-2"></i>
+                           <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
                        </div>
-                       <div class="col-lg-1 col-md-2">
-                           <div class="test fs-5 py-4">
-                               <i class="fa-solid fa-list-ul"></i>
-                               <i class="fa-solid fa-circle-question"></i>
-                               <i class="fa-solid fa-ellipsis-vertical"></i>
-                               <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
-                           </div>
-                       </div>
-                    </div>
-                </div>
+                   </div>
+                </div>          
             </div>
         </header>
         <main class="d-flex">
             <aside class="text-light">
-                <div class="top-aside py-4">
+                <div class="top-aside py-4 px-4">
                     <div class="option-container py-1">
                         <i class="fa-solid fa-house d-inline-block"></i>
-                        <p class="icon-text d-inline-block fw-bold px-2">Home</p>
+                        <p class="icon-text d-inline-block fw-bold px-2 d-lg-inline-block d-none">Home</p>
                     </div>
                     <div class="option-container py-1">
                         <i class="fa-solid fa-chart-simple d-inline-block"></i>
-                        <p class="icon-text d-inline-block px-2 fw-bold">Stats</p>
+                        <p class="icon-text d-inline-block px-2 fw-bold d-lg-inline-block d-none">Stats</p>
                     </div>
                     <div class="option-container py-1">
                         <i class="fa-solid fa-signal d-inline-block"></i>
-                        <p class="icon-text d-inline-block px-2 fw-bold">Signals</p>
+                        <p class="icon-text d-inline-block px-2 fw-bold d-lg-inline-block d-none">Signals</p>
                     </div>
                 </div>
                 <div class="bottom-aside">
                     <div class="profile-container py-1 px-1">
                         <i class="fa-solid fa-gear d-inline-block"></i>
-                        <p class="icon-text d-inline-block px-2 fw-bold"> Admin</p>
+                        <p class="icon-text d-inline-block px-2 fw-bold d-lg-inline-block d-none"> Admin</p>
                     </div>
             </aside>
             <div class="main-content">
@@ -97,8 +94,87 @@
                 </div>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-8">
-                            
+                        <div class="col-12 col-lg-8 py-4 px-4">
+                            <div class="card py-1">
+                                <div class="card-header fw-bold fs-3">
+                                  Prossime Classi
+                                </div>
+                                <div class="card-body">
+                                    <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th class="col-5" scope="col">Nome</th>
+                                            <th class="col-2 d-lg-table-cell d-none" scope="col">Data Inizio</th>
+                                            <th class="col-2 d-lg-table-cell d-none" scope="col">ROI</th>
+                                            <th class="col-2" scope="col">Stato</th>
+                                            <th class="col-2" scope="col">Azioni</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td scope="row">
+                                                <span>
+                                                    <img class="table-img" src="img/output-onlinepngtools.png" type="png" alt="">
+                                                </span>Classe 75
+                                            </td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none"><span class="badge badge-success my-green">Done</span></td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 76</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none"><span class="badge badge-success my-green">Done</span></td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 77</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none">@twitter</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 78</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none"><span class="badge badge-success my-green">Done</span></td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 79</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none">@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 80</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none"><span class="badge badge-success my-green">Done</span></td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 81</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none">@mdo</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row"><span><img class="table-img" src="img/output-onlinepngtools.png" type="png" alt=""></span>Classe 82</td>
+                                            <td>15 Feb 2021</td>
+                                            <td class="d-lg-table-cell d-none">20%</td>
+                                            <td class="d-lg-table-cell d-none"><span class="badge badge-success my-green">Done</span></td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                              </div>
                         </div>
                         <div class="col-12 col-lg-4">2</div>
                     </div>
