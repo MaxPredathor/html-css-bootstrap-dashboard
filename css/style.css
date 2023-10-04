@@ -74,4 +74,13 @@ aside{
 .my-green{
     background-color: green;
 }
+.my-red{
+    background-color: red;
+}
+.my-yellow{
+    background-color: #ffc107;
+}
+.my-mleft{
+    margin-left: 10px;
+}
 
