@@ -26,7 +26,7 @@ main{
     display: flex;
 }
 aside{
-    /* width: 150px;  */
+    width: 150px; 
     height: 100%; 
     overflow: hidden;
     background-image: url(/img/sidebar-bg.png);
@@ -82,5 +82,8 @@ aside{
 }
 .my-mleft{
     margin-left: 10px;
+}
+.my-width{
+    width: 100%;
 }
 
