@@ -86,4 +86,8 @@ aside{
 .my-width{
     width: 100%;
 }
-
+.option-container:hover{
+    background-color: var(--color-bg-search-bar);
+    color: black;
+    cursor: pointer;
+}
