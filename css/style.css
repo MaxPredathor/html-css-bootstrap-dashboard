@@ -21,7 +21,7 @@ main{
     display: flex;
 }
 aside{
-    width: 150px; 
+    /* width: 150px;  */
     height: 100%; 
     overflow: hidden;
     background-image: url(/img/sidebar-bg.png);
@@ -85,8 +85,33 @@ aside{
     color: black;
     cursor: pointer;
 }
+.my-logo{
+    height: 60px;
+    padding-top: 10px;
+}
 @media screen and (max-width: 768px){
     .offcanvas.w-50{
         width: 100% !important;
+    }
+}
+@media screen and (max-width: 425px){
+    .my-big-logo{
+        display: none;
+    }
+    .my-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .my-mleft{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width: 375px){
+    .my-big-logo{
+        display: none;
+    }
+    .my-mleft{
+        margin-left: 0px;
     }
 }
