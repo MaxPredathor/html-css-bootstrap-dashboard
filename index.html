@@ -14,28 +14,30 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container-row">
-                <div class="row my-header sticky-top">
-                   <div class="col-1">
-                       <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
-                   </div>
-                   <div class="col-10">
-                       <div class="input-group mb-3 py-3">
-                           <span class="input-group-text my-bg-grey">
-                               <i class="fa-solid fa-magnifying-glass"></i>
-                           </span>
-                           <span class="input-group-text my-bg-grey fs-6 fw-lighter">Prova a cercare: Lezioni di Laravel</span>
-                           <input type="text" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
+            <div class="container-fluid">
+                <div class="container-row">
+                    <div class="row my-header sticky-top">
+                       <div class="col-lg-1 col-md-2">
+                           <img class="py-4 px-3" src="img/logo.svg" alt="Boolean Logo">
                        </div>
-                   </div>
-                   <div class="col-1">
-                       <div class="test fs-5 py-4">
-                           <i class="fa-solid fa-list-ul"></i>
-                           <i class="fa-solid fa-circle-question"></i>
-                           <i class="fa-solid fa-ellipsis-vertical"></i>
-                           <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
+                       <div class="col-lg-10 col-md-8">
+                           <div class="input-group mb-3 py-3">
+                               <span class="input-group-text my-bg-grey">
+                                   <i class="fa-solid fa-magnifying-glass"></i>
+                               </span>
+                               <span class="input-group-text my-bg-grey fs-6 fw-lighter">Prova a cercare: Lezioni di Laravel</span>
+                               <input type="text" class="form-control my-bg-grey" aria-label="Dollar amount (with dot and two decimal places)">
+                           </div>
                        </div>
-                   </div>
+                       <div class="col-lg-1 col-md-2">
+                           <div class="test fs-5 py-4">
+                               <i class="fa-solid fa-list-ul"></i>
+                               <i class="fa-solid fa-circle-question"></i>
+                               <i class="fa-solid fa-ellipsis-vertical"></i>
+                               <i class="fa-solid fa-bell px-2" style="color: #ff8f00;"></i>
+                           </div>
+                       </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -65,29 +67,32 @@
                 <div class="container-fluid small-header">
                     <div class="row">
                         <div class="col">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                  <li class="breadcrumb-item active text-light" aria-current="page"><h1>Boolean</h1></li>
-                                  <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-info text-light">Library</span></li>
-                                </ol>
-                            </nav>
-                            <div>
-                                <nav class="d-flex" style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                      <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-info text-light">Home</span></li>
-                                      <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-info text-light">Library</span></li>
-                                    </ol>
-                                </nav>
-                                <nav>
-                                    <ol class="breadcrumb px-2">
-                                        <li class="breadcrumb-item"><span class="badge rounded-pill text-bg-info text-light">Library</span></li>
-                                        <li class="breadcrumb-item active" aria-current="page"><span class="badge rounded-pill text-bg-info text-light">Library</span></li>
-                                    </ol>
-                                </nav> 
+                            <div class="py-3">
+                                <h1 class="d-inline-block text-light">Boolean</h1>
+                                <span class="mybreadcrumb">Piano blaze</span>
+                            </div>
+                            <div class="">
+                                <span class="mybreadcrumb specialcrumb">3 app</span>
+                                <span class="chevron">
+                                    <img src="img/chevron-double-right.svg" alt="">
+                                </span>
+                                <span class="mybreadcrumb">Boolean mobile app</span>
+                                <span class="mybreadcrumb">Boolean web app</span>
+                                <span class="mybreadcrumb">Boolean blog app</span>
                             </div>
                         </div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
+                        <div class="col">
+                            <div>
+                                <h2 class="text-light fs-4 py-3 fw-normal">Studenti online degli ultimi 30 minuti</h2>
+                                <p class="fs-1 text-light">125</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="py-3">
+                                <p class="text-light d-inline-block px-2">Nuovo Studente</p>
+                                <button type="button" class="btn btn-outline-light d-inline-block">+</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="container-fluid">
